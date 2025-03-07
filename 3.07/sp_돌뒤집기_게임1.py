@@ -15,6 +15,4 @@ for tc in range(1, T+1):
             if arr[k] != arr[i-1]:
                 arr[k] = arr[i-1]
             
-
-
     print(f"#{tc}", *arr)       
