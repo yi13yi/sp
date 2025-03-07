@@ -12,7 +12,7 @@ for tc in range(1, T+1):
         for k in range(i-1, i+j-1):
             if k >= N:
                 break
-            if arr[k] != arr[i-1]:
+            if arr[k] != arr[i-1]: 
                 arr[k] = arr[i-1]
             
     print(f"#{tc}", *arr)       
