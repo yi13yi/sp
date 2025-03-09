@@ -33,5 +33,5 @@ T = int(input())  # 테스트 케이스 수 입력
 for tc in range(1, T + 1):
     sudoku = [list(map(int, input().split())) for _ in range(9)]  # 9x9 스도쿠 판 입력
     
-    result = check_sudoku(sudoku)  # 스도쿠 판 검사 결과 얻기
+    result = check_sudoku(sudoku)  
     print(f"#{tc} {result}")  
