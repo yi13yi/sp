@@ -22,3 +22,39 @@ for tc in range(1, T+1):
             max_v = max(max_v, flower_sum)
     print(f"#{tc} {max_v}")
 
+
+
+
+
+
+
+
+
+T = int(input())
+ 
+for tc in range(1, T+1):
+    M, N = map(int, input().split())
+    arr = [list(map(int, input().split())) for _ in range(M)]
+    # 우 하 좌 상
+    dr = [0, 1, 0, -1]
+    dc = [1, 0, -1, 0]
+ 
+    max_cnt = 0
+    for i in range(M):
+ 
+        for j in range(N):
+ 
+            point_sum = arr[i][j]
+            for k in range(4):
+                c = arr[i][j]
+ 
+                for d in range(1, c + 1):
+                    ni = i + dr[k] * d
+                    nj = j + dc[k] * d
+                    if 0 <= ni < M and 0 <= nj < N:
+                        point_sum += arr[ni][nj]
+ 
+            if point_sum > max_cnt:
+                max_cnt = point_sum
+ 
+    print(f"#{tc} {max_cnt}")

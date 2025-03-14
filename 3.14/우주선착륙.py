@@ -9,7 +9,7 @@ for t in range(1, T + 1):
 
     c_count = 0  # 후보지 개수
 
-    # 각 지점에 대해 8방향을 확인
+    # 각 지점에 대해 8방향 확인
     for i in range(N):
         for j in range(M):
             current_height = height[i][j]

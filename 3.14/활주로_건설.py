@@ -38,4 +38,4 @@ for tc in range(T):
             temp.append(A[j][i])
         result += check_slope(temp)
 
-    print("#{} {}".format(tc+1, result))
+    print(f"#{tc+1} {result}")
