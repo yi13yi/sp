@@ -27,5 +27,3 @@ while len(N_list) > 1:
     N_list = new_list
 
 print(*N_list)
-
-
